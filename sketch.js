@@ -83,7 +83,7 @@ function setup() {
   button2.size(50,50);
 
  // escreva um bloco de código correto para adicionar um botão para cortar a corda 
-
+ button2.mouseClicked(drop).
   ellipseMode(RADIUS);
 }
 
@@ -111,7 +111,7 @@ function draw()
    bubble.visible = false;
     World.remove(engine.world,fruit);
     fruit = null;
-   Animation.eat = true
+    bunny.changeAnimation('eating');
   }
   
   if(collide(fruit,bubble,40) == true)
